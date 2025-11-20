@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.linear-gradient {
+  background: linear-gradient(
+    179.14deg,
+    rgba(32, 18, 63, 0) -7.14%,
+    #000000 87.01%
+  );
+}
+
+body{
+  background-color: black;
+  color: azure;
+}
+.bg-grid {
+  --grid-color: #000; /* Define the default color */
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="100" height="100" fill="none" stroke="%23${var(--grid-color)}"%3E%3Cpath d="M0 .5H31.5V32"/%3E%3C/svg%3E');
+}
+
+.register{
+  width: 100%;
+  background: url("./assets/images/bg1.png") top center;
+  background-size: cover;
+ position: relative;
+}
+
+.PhoneInputInput {
+  flex: 1;
+  min-width: 0;
+  outline: none;
+  background: transparent;
+}
+.PhoneInputInput{
+  display: block;
+      width: 100%;
+      height: calc(1.5rem + 2px);
+      line-height: 1.42857;
+      border: none;
+      box-shadow: none;
+      padding: 5px 5px;
+      font-size: 0.85rem;
+      transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out
+  }
+  .PhoneInputInput{
+   cursor: text;
+   color: whitesmoke;
+     
+            }
+.cover{
+  background: rgba(8, 8, 8, 0.925);
+ height: 100%;
+ }
+/*div:hover::before {
+  content: attr(title);
+  position: absolute;
+  background-color: #101010;
+  color: #e7d09d;
+  font-size: 12px;
+  padding: 2px;
+  border-radius: 2px;
+  margin-left: 40px;
+  z-index: 100;
+}*/
