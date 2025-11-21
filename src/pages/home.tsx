@@ -67,10 +67,10 @@ const Home = () => {
 </div>
 
             </div>
-            <div className='text-lg sm:text-2xl text-white font-epilogue mt-2 font-semibold'>
+            <div className='text-lg sm:text-2xl text-white font-rubik mt-2 font-semibold'>
                  ${stats?.balance?.toLocaleString()}.00 
 
-            </div><span className='text-green-700 text-sm sm:text-base'>+${stats?.total_p?.toLocaleString()}.00</span>
+            </div><span className='text-green-700 font-rubik text-sm sm:text-base'>+${stats?.total_p?.toLocaleString()}.00</span>
      
             
 
@@ -136,11 +136,11 @@ const Home = () => {
         }
 
 </div>
-<div className='text-xl sm:text-2xl text-white font-epilogue mt-2 font-semibold'>
+<div className='text-xl sm:text-2xl text-white font-rubik mt-2 font-semibold'>
 ${stats?.simple_bal?.toLocaleString()}.00
             </div>
             <div className='sm:text-base text-sm font-epilogue bg-gradient-to-r from-[#f6b430] to-[#fe9240] text-transparent bg-clip-text'>
-                Earned <span className='text-green-700'> ${stats?.simple_e?.toLocaleString()}.00</span>
+                Earned <span className='text-green-700 font-rubik'> ${stats?.simple_e?.toLocaleString()}.00</span>
             </div>
         
         </div>
@@ -159,11 +159,11 @@ ${stats?.simple_bal?.toLocaleString()}.00
 </div>
         }
 </div>
-<div className='text-xl sm:text-2xl text-white font-epilogue mt-2 font-semibold'>
+<div className='text-xl sm:text-2xl text-white font-rubik mt-2 font-semibold'>
 ${stats?.compound_bal?.toLocaleString()}.00
             </div>
             <div className='sm:text-base text-sm font-epilogue bg-gradient-to-r  from-[#f6b430] to-[#fe9240] text-transparent bg-clip-text'>
-                Earned <span className='text-green-700'> ${stats?.compound_e?.toLocaleString()}.00</span>
+                Earned <span className='text-green-700 font-rubik'> ${stats?.compound_e?.toLocaleString()}.00</span>
             </div>
         </div>
         </div>
