@@ -80,18 +80,18 @@ const Deposit = () => {
 
     const BTC = async () => {
         try {
-            // const response = await axios.get('https://api.coingecko.com/api/v3/simple/price', {
-            //     params: {
-            //       ids: 'bitcoin,tether,ethereum,usd-coin',
-            //       vs_currencies: 'usd,btc,eth,usdt',
-            //       include_24hr_change: true,
-            //     },
-            //   });
+            const response = await axios.get('https://api.coingecko.com/api/v3/simple/price', {
+                params: {
+                  ids: 'bitcoin,tether,ethereum,usd-coin',
+                  vs_currencies: 'usd,btc,eth,usdt',
+                  include_24hr_change: true,
+                },
+              });
              
-              const btcToUsd = 80754.07//response.data.bitcoin.usd; commented due to cors error
-              const tether = 1.00 //response.data.tether.usd;
-              const eth = 2629.41 //response.data.ethereum.usd;
-              const usdc = 1.00 //response.data['usd-coin'].usd;
+              const btcToUsd = response.data.bitcoin.usd; 
+              const tether = response.data.tether.usd;
+              const eth = response.data.ethereum.usd;
+              const usdc = response.data['usd-coin'].usd;
 
          
               setCryptoPrice({btc:btcToUsd, usdt:tether, eth:eth,usdc:usdc})
