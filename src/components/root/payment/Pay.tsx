@@ -104,7 +104,7 @@ const manualPay =   async () => {
     if(!txid) return toast.error("No Transaction ID")
    if(topup === true) {
     try{
-         await postAPI('transact/topup',topD)
+         await postAPI('/topup-api',topD)
 
         setPayState(prev => ({...prev,
             paid:true,
@@ -119,7 +119,7 @@ const manualPay =   async () => {
 }
    } else {
     try {
-         await postAPI('transact/deposit',{...payD,status:"PENDING",txid})
+         await postAPI('/deposit-api',{...payD,status:"PENDING",txid})
         toast.success("Submitted Successfully")
         const targetDate = new Date().getTime() + 30 * 60 * 1000;
         Cookies.remove('timeout')
@@ -154,7 +154,7 @@ const manualPay =   async () => {
        setPayState(prev => ({...prev, load:true}))
        if(topup === true) {
         try{
-             await postAPI('transact/topup',topD)
+             await postAPI('/topup-api',topD)
             setPayState(prev => ({...prev,
                 paid:true,
                 load:false,
@@ -167,7 +167,7 @@ const manualPay =   async () => {
     }
        } else {
         try{
-             await postAPI('transact/deposit',payD)
+             await postAPI('/deposit-api',payD)
             setPayState(prev => ({...prev,
                 paid:true,
                 load:false,
@@ -424,7 +424,7 @@ const manualPay =   async () => {
             <p className='font-epilogue font-normal text-xs sm:text-sm text-[#808191] text-center '>Scan the QR code below or copy the {selectedOption} address to make payment</p>
                 <div className='flex flex-col justify-center mt-2 sm:mt-4 items-center bg-[#EAEDFD] p-2 rounded-lg'>
                     <div className='flex items-center mb-2'>
-                    <div className='flex flex-col items-center rounded-full bg-[#101010] '>
+                    <div className='flex flex-col items-center rounded-full  bg-[#101010] '>
                     😎
                         </div>
                     <span className='font-epilogue text-xs text-center text-[#808191] ml-2'>UserHub</span></div>
