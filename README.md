@@ -1,2 +1,2 @@
 # User Hub
-### React Dashboard
+### React Dashboard with auth pages

@@ -122,9 +122,7 @@ const AuthRoute = ({ children }:ProtectedRouteProps) => {
   
   <div className={`flex flex-col dark`}>
 
-    <div>
-      <Root />
-    </div>
+  
  
     <div className='bg-primary h-full  w-full overflow-hidden register '> 
     <div className='cover h-full w-full overflow-hidden '>
@@ -134,7 +132,7 @@ const AuthRoute = ({ children }:ProtectedRouteProps) => {
       <Route path="/forgot-password" element={<ForgotPass />} />
       <Route path="/reset-password" element={<ResetPass />} />
       <Route path="/verify" element={<VerfiyEmail />} />
-      <Route path="*" element={<Navigate to="/" />} />
+      <Route path="/*" element={<Root />} />
  </Routes>
  </div>
  </div>
