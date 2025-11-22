@@ -39,7 +39,11 @@ const VerfiyEmail = () => {
         setIsLoading(false)
    
   }catch(error:any){
+    if(error.response?.data?.error){
     toast.error(error.response?.data?.error,{id:'email'});
+    }else{
+      toast.dismiss()
+    }
     console.error('Verify Email error:', error);
     setIsError(true)
    
@@ -62,7 +66,7 @@ const VerfiyEmail = () => {
 
   return (
     <div className="flex mt-10 items-center justify-center py-[5rem] px-4 sm:px-6 lg:px-8">
-    <div className="w-full max-w-md space-y-8">
+    <div className="w-full h-screen max-w-md space-y-8">
       <div>
       <div className='flex flex-col justify-center items-center'>
       <div onClick={() => navigate('/')} className='cursor-pointer'>
