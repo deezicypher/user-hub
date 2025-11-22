@@ -1,6 +1,6 @@
 # User Hub
 ### React Dashboard with auth pages
-A clean, minimal user dashboard built with React. Includes authentication pages and sample integrations so you can showcase a real-feeling app in your frontend portfolio. mainly for frontend, you can ignore the API implementations
+A clean, minimal user dashboard built with React and Typescript. Includes authentication pages and sample integrations so you can showcase a real-feeling app in your frontend portfolio. mainly for frontend, you can ignore the API implementations
 
 ### Key Features
 
