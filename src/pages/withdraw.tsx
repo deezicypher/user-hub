@@ -9,7 +9,6 @@ import { nanoid } from 'nanoid'
 import { useNavigate } from 'react-router-dom';
 import { CryptoAmountState, CryptoPriceState, OptionsProps, options } from './deposit';
 import { UserContextProps } from '../types';
-import WithdrawM from '../components/root/modal/Withdraw';
 
 
 interface Transaction {
