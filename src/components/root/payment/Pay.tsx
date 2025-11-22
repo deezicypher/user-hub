@@ -104,7 +104,7 @@ const manualPay =   async () => {
     if(!txid) return toast.error("No Transaction ID")
    if(topup === true) {
     try{
-         await postAPI('/topup-api',topD)
+         //await postAPI('/topup-api',topD)
 
         setPayState(prev => ({...prev,
             paid:true,
