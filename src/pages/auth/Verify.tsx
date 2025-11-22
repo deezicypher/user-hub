@@ -89,6 +89,7 @@ const VerfiyEmail = () => {
       </p>
       </>
 )}
+
  {isSuccess  && (
   <img
   className="flex mx-auto h-60 w-auto "
